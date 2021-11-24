@@ -5,7 +5,8 @@ title: Blog
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  	<!-- post in paginator.posts -->
+	{% for post in paginator.posts %}
     <article class="post">
       <a href="{{ site.baseurl }}{{ post.url }}">
         <h1>{{ post.title }}</h1>
@@ -20,7 +21,25 @@ title: Blog
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
-  {% endfor %}
+	{% endfor %}
+	
+	<!-- post in paginator.posts -->
+	{% for post in site.posts %}
+    <article class="post">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <h1>{{ post.title }}</h1>
+
+        <div>
+          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+        </div>
+      </a>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+	{% endfor %}
 
   <!-- pagination -->
   {% if paginator.total_pages > 1 %}
