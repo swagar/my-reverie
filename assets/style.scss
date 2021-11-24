@@ -28,11 +28,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   height: 100%;
-  filter: invert(100%) hue-rotate(180deg);
-}
-
-body img {
-  filter: hue-rotate(180deg) invert(100%);
 }
 
 .container {
