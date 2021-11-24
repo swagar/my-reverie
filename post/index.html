@@ -4,6 +4,13 @@ permalink: /post/
 title: Post
 ---
 
+## md tag
+<br>
+Post page<br>
+paginator.total_posts = {{ paginator.total_posts }}<br>
+paginator.previous_page_path = {{ paginator.previous_page_path }}<br>
+site.paginate_path = {{ site.paginate_path }}<br>
+
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
