@@ -11,6 +11,9 @@ paginator.previous_page_path = {{ paginator.previous_page_path }}<br>
 site.paginate_path = {{ site.paginate_path }}<br>
 paginator.page = {{ paginator.page }}<br>
 relative_url  = {{ relative_url }}<br>
+'/' | relative_url = {{ '/' | relative_url }}<br>
+site.paginate_path | relative_url = {{ site.paginate_path | relative_url }}
+
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
@@ -43,6 +46,7 @@ relative_url  = {{ relative_url }}<br>
 		<em>{{ page }}</em>
 		{% elsif page == 1 %}
 		<a href="{{ '/' | relative_url }}">{{ page }}</a>
+		<a href="{{ site.paginate_path | relative_url | replace: 'page:num', '' }}">{{ page }}</a>
 		{% else %}
 		<a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
 		{% endif %}
