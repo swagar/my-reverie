@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: page
 permalink: /blog/
-title: Categories
+title: Blog
 ---
 
 <div class="posts">
