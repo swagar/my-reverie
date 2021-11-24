@@ -23,7 +23,7 @@ title: Blog
     </article>
 	{% endfor %}
 	
-	<!-- post in paginator.posts -->
+	<!-- post in site.posts -->
 	{% for post in site.posts %}
     <article class="post">
       <a href="{{ site.baseurl }}{{ post.url }}">
