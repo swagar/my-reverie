@@ -4,12 +4,12 @@ permalink: /display/
 title: Display
 ---
 
-<!-- site -->
+<!-- site.posts -->
 <div>
-{% site %}
+{% site.posts %}
 </div>
 
-<!-- paginator -->
+<!-- paginator.posts -->
 <div>
-{% paginator %}
+{% paginator.posts %}
 </div>
