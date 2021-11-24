@@ -89,7 +89,7 @@ plugins:
 
 include: ['_pages','post']
 
-paginate: 6
+paginate: 2
 #paginate_path: /page:num/
 paginate_path: "/post/page:num/"
 
