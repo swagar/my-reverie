@@ -6,7 +6,7 @@ title: Display
 
 <!-- site.posts -->
 <div>
-{% site.posts %}
+{% site.baseurl %}
 </div>
 
 <!-- paginator.posts -->
