@@ -21,15 +21,15 @@ avatar: /images/reverie.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: simon@wagar
-  facebook:
+  email: simon@wagar.de
+  facebook: simon.wagar
   flickr:
-  github: swagar/my-reverie
+  github: swagar
   instagram:
   linkedin: 
   pinterest:
   rss: 
-  twitter: 
+  twitter: SimonWagar
   stackoverflow: 
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -46,8 +46,6 @@ google_analytics:
 # For newer "GA4" analytics, use the following instead of the "UA" entry above
 #google_analytics_ga4: G-GABC1DEFG
 
-# Your website URL (e.g. http://amitmerchant1990.github.io or http://www.amitmerchant.com)
-# Used for Sitemap.xml and your RSS feed
 url: https://swagar.github.io/my-reverie/
 enforce_ssl: https://swagar.github.io/my-reverie/
 
@@ -63,8 +61,6 @@ baseurl: "/my-reverie"
 
 permalink: /:title/
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -90,8 +86,7 @@ plugins:
 include: ['_pages']
 
 paginate: 2
-#paginate_path: /page:num/
-paginate_path: "/post/page:num/"
+paginate_path: "/blog/page:num/"
 
 # Exclude these files from your production _site
 exclude:
