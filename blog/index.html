@@ -3,17 +3,11 @@ layout: default
 title: Blog
 ---
 
-## md tag
-<br>
-Post page<br>
-paginator.total_posts = {{ paginator.total_posts }}<br>
-paginator.previous_page_path = {{ paginator.previous_page_path }}<br>
-site.paginate_path = {{ site.paginate_path }}<br>
-paginator.page = {{ paginator.page }}<br>
-relative_url  = {{ relative_url }}<br>
-'/' | relative_url = {{ '/' | relative_url }}<br>
-site.paginate_path | relative_url = {{ site.paginate_path | relative_url }}
-
+<nav>
+	<a href="{{ site.baseurl }}/archive">Archive</a>
+	<a href="{{ site.baseurl }}/categories">Categories</a>
+</nav>
+			
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
@@ -56,6 +50,12 @@ site.paginate_path | relative_url = {{ site.paginate_path | relative_url }}
 	{% else %}
 		<span>Next &raquo;</span>
 	{% endif %}
+		<a href="{{ site.baseurl }}/archive">Archive</a>
+		<a href="{{ site.baseurl }}/categories">Categories</a>
+	</div>
+	<div class="pagination">
+		<a href="{{ site.baseurl }}/archive">Archive</a>
+		<a href="{{ site.baseurl }}/categories">Categories</a>
 	</div>
 	{% endif %}
 </div>
