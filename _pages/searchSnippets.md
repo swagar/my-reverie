@@ -16,6 +16,9 @@ permalink: /searchSnippets/
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     searchResultTemplate: '<div style="text-align: left !important;"><a href="{url}"><h1 style="text-align:left !important;">{title}</h1></a><div class="post-tags"><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{category}</a></div></div>',
+	templateMiddleware: function(prop, value, template) {
+		return value
+	  },
     json: '{{ site.baseurl }}/assets/snippets.json'
     });
 </script>
