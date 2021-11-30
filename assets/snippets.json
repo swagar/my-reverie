@@ -1,14 +1,11 @@
 ---
 ---
-[{% for page in site.pages %}{% if page.snippet %}	
-    {
-
+[{% for page in site.pages %}{% if page.snippet %}{
       "title"    : "{% if page.title != "" %}{{ page.title | escape }}{% else %}{{ page.excerpt | strip_html |  escape | strip }}{%endif%}",
       "url"      : "{{ site.baseurl }}{{ page.url }}",
       "category" : "{{ page.categories | join: ', '}}",
       "date"     : "{{ page.date | date: "%B %e, %Y" }}",
 	  "snippet"  : "{{ page.snippet }}"
-    },{% endif %}	
-  {% endfor %}
+    },{% endif %}{% endfor %}
   {}
 ]
