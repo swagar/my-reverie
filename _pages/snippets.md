@@ -4,6 +4,9 @@ permalink: /snippets/
 title: Code snippets
 ---
 
+<nav>
+	<a href="{{ site.baseurl }}/searchSnippets">Search</a>
+</nav><br>
 
 <div id="archives">
 {% for category in site.categories %}

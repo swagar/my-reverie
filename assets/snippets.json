@@ -6,7 +6,7 @@
       "url"      : "{{ site.baseurl }}{{ page.url }}",
       "category" : "{{ page.categories | join: ', '}}",
       "date"     : "{{ page.date | date: "%B %e, %Y" }}",
-	  "snippet"  : "{{ page.snippet }}"
+      "snippet"  : "{{ page.snippet }}"
     },{% endif %}{% endfor %}
 	{}
 ]
