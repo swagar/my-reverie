@@ -22,7 +22,7 @@ permalink: /searchSnippets/
 			var length = categories.length;
 			var result = ""
 			for (var i = 0; i < length; i++) {
-				result +=  '<a href="">' + categories[i] + '</a>'
+				result +=  '<a href="">' + categories[i] + '</a> '
 			}
 			return result
 		}
