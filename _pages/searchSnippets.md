@@ -18,7 +18,13 @@ permalink: /searchSnippets/
     searchResultTemplate: '<div style="text-align: left !important;"><a href="{url}"><h1 style="text-align:left !important;">{title}</h1></a><div class="post-tags">{category}</div></div>',
 	templateMiddleware: function(prop, value, template) {
 		if(prop == "category"){
-			return '<a href="">' + value + '</a>'
+			var categories = value.split(", ")
+			var length = categories.length;
+			var result = ""
+			for (var i = 0; i < length; i++) {
+				result +=  '<a href="">' + categories[i] + '</a>'
+			}
+			return result
 		}
 	  },
     json: '{{ site.baseurl }}/assets/snippets.json'
