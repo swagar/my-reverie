@@ -2,8 +2,8 @@
 layout: post
 title:  MySQL partition based on year and month 
 categories: [MySQL,SQL]
-excerpt: Foo.
-snippet: partition based on year and month
+excerpt: partition based on year and month
+snippet: true
 ---
 
 My first snippet.
