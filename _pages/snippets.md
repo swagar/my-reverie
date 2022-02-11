@@ -14,6 +14,9 @@ title: Code snippets
         <article class="post">
               <a href="{{ site.baseurl }}{{ page.url }}">
                 <h1>{{ page.title }}</h1>
+                <div>
+                    <p class="post_date">{{ page.date | date: "%B %e, %Y" }}</p>
+                </div>
               </a>
               <div class="entry">
                 {{ page.excerpt }}
