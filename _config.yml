@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: My dev page
+name: Simon Wagar
 
 # Name of the author
 author: Simon Wagar
 
 # Short bio or description (displayed in the header)
-description: Simon Wagar
+description: Personal dev page
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 # https://vanceai.com/posts/pixel-art-generators-review/
@@ -22,7 +22,7 @@ avatar: /images/me-48x48.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: simon@wagar.de
+  email: simon at wagar.de
   facebook: simon.wagar
   flickr:
   github: swagar
