@@ -4,7 +4,7 @@ title: Log all endpoints
 categories: [Java,Spring,Spring Boot]
 excerpt: Log all endpoints in Spring Boot
 snippet: true
-date: 2022.02.11
+date: 2022.04.19
 ---
 
 The following class logs all endpoints including the path and the corresponding controller class. This is mainly for debugging purpose.
