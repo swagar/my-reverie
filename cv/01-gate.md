@@ -1,6 +1,6 @@
 ---
 layout: post
-name: G.A.T.E. Communications in Berlin 
+title: G.A.T.E. Communications in Berlin 
 position: Student employee
 type: work
 date: 2008.08.01

@@ -2,10 +2,10 @@
 ---
 [
   {% for page in site.pages %}{% if page.type == "work" %}{
-  "name"    : "{{ page.name }}",
+  "title" : "{{ page.title }}",
   "position" : "{{ page.position }}",
   "start" : "{{ page.start }}",
-  "end"     : "{{ page.end }}"
+  "end" : "{{ page.end }}"
 },{% endif %}{% endfor %}
   {}
 ]
