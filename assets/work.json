@@ -6,6 +6,5 @@
   "position" : "{{ page.position }}",
   "start" : "{{ page.start }}",
   "end" : "{{ page.end }}"
-},{% endif %}{% endfor %}
-  {}
+}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
 ]
