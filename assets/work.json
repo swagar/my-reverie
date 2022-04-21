@@ -1,0 +1,11 @@
+---
+---
+[
+  {% for page in site.pages %}{% if page.type == "work" %}{
+  "name"    : "{{ page.name }}",
+  "position" : "{{ page.position }}",
+  "start" : "{{ page.start }}",
+  "end"     : "{{ page.end }}"
+},{% endif %}{% endfor %}
+  {}
+]
