@@ -17,7 +17,7 @@ title: Curriculum Vitae
             <div class="entry">
                 {{ page.content }}
             </div> 
-        </article><h2></h2>
+        </article>
     {% endif %}
 {% endfor %}
 </div>
