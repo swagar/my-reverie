@@ -8,5 +8,5 @@
   "start" : "{{ page.start }}",
   "end" : "{{ page.end }}"
 },{% endfor %}
-  {}
+  
 ]
