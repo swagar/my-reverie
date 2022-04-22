@@ -1,12 +1,11 @@
 ---
 ---
-[
-  {% assign works = site.pages | where: "type", "work" %}
+[ {% assign works = site.pages | where: "type", "work" %}
   {% for page in works %}{
   "title" : "{{ page.title }}",
   "position" : "{{ page.position }}",
   "start" : "{{ page.start }}",
   "end" : "{{ page.end }}"
 },{% endfor %}
-  
+  {}
 ]
