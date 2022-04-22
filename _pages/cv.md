@@ -14,12 +14,10 @@ title: Curriculum Vitae
             <div>
                 <p class="author_title">{{ page.title }} <br>{{ page.start }} - {{ page.end }}</p>
             </div>
-
             <div class="entry">
                 {{ page.content }}
             </div> 
-        </article>    
-        <h2></h2>
+        </article><h2></h2>
     {% endif %}
 {% endfor %}
 </div>
