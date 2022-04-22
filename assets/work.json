@@ -1,7 +1,7 @@
 ---
 ---
 [
-  {% for page in site.pages | where: "type", "work", %}{
+  {% for page in site.pages | where: "type", "work" %}{
   "title" : "{{ page.title }}",
   "position" : "{{ page.position }}",
   "start" : "{{ page.start }}",
