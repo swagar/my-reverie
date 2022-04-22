@@ -12,7 +12,7 @@ title: Curriculum Vitae
             <h3>{{ page.position }}</h3>
             <div>
                 <p class="post_date">{{ page.title }}</p>
-                <p>{{ page.start }} - {{ page.end }}</p>
+                <p class="post_date">{{ page.start }} - {{ page.end }}</p>
             </div>
         </article>
     {% endif %}
