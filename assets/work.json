@@ -1,11 +1,11 @@
 ---
 ---
 [
-  {% for page in site.pages %}{% if page.type == "work" %}{
+  {% for page in site.pages %}{
   "title" : "{{ page.title }}",
   "position" : "{{ page.position }}",
   "start" : "{{ page.start }}",
   "end" : "{{ page.end }}"
-},{% endif %}{% endfor %}
+},{% endfor %}
   {}
 ]
