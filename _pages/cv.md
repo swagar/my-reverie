@@ -9,13 +9,10 @@ title: Curriculum Vitae
 {% for page in site.pages %}
     {% if page.type == "work" %}
         <article class="post">
-            <h1>{{ page.title }}</h1>
-            ## {{ page.title }}
+            <h3>{{ page.position }}</h3>
             <div>
-                <p class="post_date">{{ page.position }}</p>
-            </div>
-            <div class="entry">
-                {{ page.excerpt }}
+                <p class="post_date">{{ page.title }}</p>
+                <p>{{ page.start }} - {{ page.end }}</p>
             </div>
         </article>
     {% endif %}
