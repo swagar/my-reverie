@@ -7,17 +7,17 @@ title: Curriculum Vitae
 ## Work Experience
 
 <div id="archives">
-{% for page in site.pages reversed %}
-    {% if page.type == "work" %}
-        <article class="post">
-            <h3>{{ page.position }}</h3>
-            <div>
-                <p class="author_title">{{ page.title }} <br>{{ page.start }} - {{ page.end }}</p>
-            </div>
-            <div class="entry">
-                {{ page.content }}
-            </div> 
-        </article><br>
-    {% endif %}
+{% assign work_exps = site.pages | where: "type", "work" %}
+{% for page in work_exps reversed %}
+    <article class="post">
+        <h3>{{ page.position }}</h3>
+        <div>
+            <p class="author_title">{{ page.title }} <br>{{ page.start }} - {{ page.end }}</p>
+        </div>
+        <div class="entry">
+            {{ page.content }}
+        </div> 
+    </article>
+    {% unless forloop.last %}<br>{% endunless %}
 {% endfor %}
 </div>
