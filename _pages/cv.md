@@ -10,7 +10,7 @@ title: Curriculum Vitae
     {% if page.type == "work" %}
         <article class="post">
             <h1>{{ page.title }}</h1>
-            ##{{ page.title }}
+            ## {{ page.title }}
             <div>
                 <p class="post_date">{{ page.position }}</p>
             </div>
