@@ -18,6 +18,8 @@ title: Curriculum Vitae
 {% endfor %}
 </div>
 
+## Work Experience
+
 <div id="archives">
 {% for page in site.pages %}
     {% if page.type == "work" %}
