@@ -14,7 +14,9 @@ title: Curriculum Vitae
                 <p class="post_date">{{ page.title }} <br>{{ page.start }} - {{ page.end }}</p>
             </div>
 
-            {{ page.content }}
+            <div class="entry">
+                {{ page.content }}
+            </div>            
         </article>
     {% endif %}
 {% endfor %}

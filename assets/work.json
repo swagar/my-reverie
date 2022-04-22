@@ -5,8 +5,7 @@
   "title" : "{{ page.title }}",
   "position" : "{{ page.position }}",
   "start" : "{{ page.start }}",
-  "end" : "{{ page.end }}",
-  "content" : "{{ page.content }}"
+  "end" : "{{ page.end }}"
 },{% endif %}{% endfor %}
   {}
 ]
