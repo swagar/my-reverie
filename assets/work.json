@@ -1,7 +1,7 @@
 ---
 ---
 [ {% assign works = site.pages | where: "type", "work" %}
-  {% for page in works %}{
+  {% for page in works reversed %}{
     "title" : "{{ page.title }}",
     "position" : "{{ page.position }}",
     "start" : "{{ page.start }}",
