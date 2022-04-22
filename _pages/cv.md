@@ -20,7 +20,7 @@ title: Curriculum Vitae
             </div> 
         </article>
     
-        <h3>.</h3>
+        <h2></h2>
     {% endif %}
 {% endfor %}
 </div>
