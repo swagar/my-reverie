@@ -17,7 +17,7 @@ title: Curriculum Vitae
         <div class="entry">
             {{ page.content }}
         </div> 
-        Tech stack:{% for tech in page.tech_stack %}<div class="tech-tags">{{tech}}</div>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}        
+        Tech stack:{% for tech in page.tech_stack %}<tech-tag class="tech-tag">{{tech}}</tech-tag>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}        
     </article>
     {% unless forloop.last %}<br>{% endunless %}
 {% endfor %}
