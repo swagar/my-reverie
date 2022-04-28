@@ -17,11 +17,10 @@ title: Curriculum Vitae
         <div class="entry">
             {{ page.content }}
         </div> 
-        Tech stack: <div class="post-tags">
-          {% for tech in page.tech_stack %}
-            <a>{{tech}}</a>{% unless forloop.last %}&nbsp;{% endunless %}
-          {% endfor %}
-        </div>
+        Tech stack: 
+            {% for tech in page.tech_stack %}
+                <div class="tech-tags">{{tech}}</div>{% unless forloop.last %}&nbsp;{% endunless %}
+            {% endfor %}        
     </article>
     {% unless forloop.last %}<br>{% endunless %}
 {% endfor %}
