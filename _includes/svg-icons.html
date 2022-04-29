@@ -13,4 +13,4 @@
 {% if site.footer-links.googleplus %}<a href="https://plus.google.com/{{ site.footer-links.googleplus }}"><i class="svg-icon googleplus"></i></a>{% endif %}
 {% if site.footer-links.playconsole %}<a href="https://play.google.com/store/apps/dev?id={{ site.footer-links.playconsole }}"><i class="svg-icon playconsole"></i></a>{% endif %}
 <br>
-{{ "now" | date: "%Y-%m-%d %H:%M" }}
+{{ "now" | in_time_zone: "Europe/Berlin" | date: "%Y-%m-%d %H:%M" }}
