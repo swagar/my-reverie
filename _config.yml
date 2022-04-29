@@ -89,6 +89,8 @@ include: ['_pages']
 paginate: 2
 paginate_path: "/blog/page:num/"
 
+timezone: Europe/Berlin
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
