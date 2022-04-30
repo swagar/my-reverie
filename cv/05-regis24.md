@@ -15,5 +15,3 @@ tech_stack: [Java,Go,Spring,Spring Boot,SQL,ElasticSearch,Kibana,Docker,Docker S
 - Development of internal Tools
 - Porting of legacy systems and prototypes to Java
 - Bug fixing
-
-
