@@ -22,3 +22,8 @@ title: Curriculum Vitae
     {% unless forloop.last %}<br><div class="single-line"></div>{% endunless %}
 {% endfor %}
 </div>
+
+## Education
+
+
+

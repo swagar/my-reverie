@@ -14,7 +14,7 @@ tech_stack: [Java,Kotlin,Spring,Spring Boot,MySQL,ElasticSearch,Kibana,Git,Jenki
 - Design and development of new software components
 - Maintenance and further development of the following systems:
   - Fraud Prevention
-- 3D Secure Service
+  - 3D Secure Service
 - Maintenance and further development of legacy systems
 - Development of internal Tools
 - Software support and bug fixing
