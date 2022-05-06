@@ -25,5 +25,20 @@ title: Curriculum Vitae
 
 ## Education
 
+<div id="archives">
+{% assign educations = site.pages | where: "type", "education" %}
+{% for page in educations reversed %}
+    <article class="post">
+        <h3>{{ page.position }}</h3>
+        <div>
+            <p class="author_title">{{ page.institution }} <br>{{ page.start }} - {{ page.end }}</p>
+        </div>
+        <div class="entry">
+            {{ page.content }}
+        </div>
+    </article>
+    {% unless forloop.last %}<br><div class="single-line"></div>{% endunless %}
+{% endfor %}
+</div>
 
 
