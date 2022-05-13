@@ -11,4 +11,3 @@ tech_stack: [Java,Spring,Wicket,Cassandra]
 - Maintenance and further development of legacy systems
 - Development of new software components
 - Bug fixing
-
